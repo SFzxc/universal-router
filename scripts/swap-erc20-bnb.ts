@@ -11,7 +11,7 @@ const CAKE_ADDRESS = '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82'; // CAKE trên
 const WBNB_ADDRESS = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c'; // WBNB trên BSC
 const UNIVERSAL_ROUTER_ADDRESS = '0x1A0A18AC4BECDDbd6389559687d1A73d8927E416'; // UniversalRouter của Pancakeswap
 const FACTORY_ADDRESS = '0x0BFbCF9fa4f9C56B0F40a671Ad40E0805A091865'; // Pancakeswap V3 Factory
-const PERMIT2_ADDRESS = '0x000000000022D473030F116dDEE9F6B43aC78BA3'; // Permit2 contract
+const PERMIT2_ADDRESS = '0x31c2F6fcFf4F8759b3Bd5Bf0e1084A055615c768'; // Permit2 contract
 
 const ROUTER_ABI = [
   'function execute(bytes calldata commands, bytes[] calldata inputs, uint256 deadline) external payable'
