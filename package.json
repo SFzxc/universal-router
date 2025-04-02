@@ -1,0 +1,12 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.19"
+  },
+  "dependencies": {
+    "@uniswap/router-sdk": "^2.0.3",
+    "@uniswap/universal-router-sdk": "^4.19.5",
+    "dotenv": "^16.4.7"
+  }
+}
