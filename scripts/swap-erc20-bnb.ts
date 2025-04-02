@@ -41,6 +41,7 @@ const permit2Contract = new ethers.Contract(PERMIT2_ADDRESS, PERMIT2_ABI, wallet
 const FEES = [100, 500, 2500, 10000]; // 0.01%, 0.05%, 0.25%, 1%
 
 function encodePath(tokenIn: string, fee: number, tokenOut: string): string {
+  // return AbiCoder.defaultAbiCoder().encode(['address', 'uint24', 'address'], [tokenIn, fee, tokenOut]);
   return solidityPacked(['address', 'uint24', 'address'], [tokenIn, fee, tokenOut]);
 }
 
