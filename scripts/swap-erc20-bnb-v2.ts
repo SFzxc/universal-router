@@ -222,18 +222,6 @@ async function sellCakeToBnb(amountToSell: string) {
     console.log('Swap transaction hash:', tx.hash);
     const receipt = await tx.wait();
     console.log('Swap transaction confirmed:', receipt.transactionHash);
-
-    // // Unwrap WBNB thành BNB
-    // const wbnbBalance = await wbnbContract.balanceOf(WALLET_ADDRESS);
-    // console.log('WBNB balance after swap:', ethers.formatUnits(wbnbBalance, 18));
-    // if (wbnbBalance > 0) {
-    //   const unwrapTx = await wbnbContract.withdraw(wbnbBalance);
-    //   const unwrapReceipt = await unwrapTx.wait();
-    //   console.log('Unwrap transaction confirmed:', unwrapReceipt.transactionHash);
-    // }
-
-    // const finalBnbBalance = await provider.getBalance(WALLET_ADDRESS);
-    // console.log('Final BNB balance:', ethers.formatEther(finalBnbBalance));
   } catch (error) {
     console.error('Swap failed:', error);
     if (error instanceof Error) {
